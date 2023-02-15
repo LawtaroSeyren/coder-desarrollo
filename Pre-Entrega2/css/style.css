@@ -51,8 +51,8 @@ li a:hover {
 
 /* Main */
 
-main {
-    background: linear-gradient(0deg, #ffffff 0%, rgba(83,127,231,1) 100%);
+.mainIndex {
+    background: linear-gradient(to top, #ffffff 60%, #181823 100%);
     height: 200px;
     width: 100vw;
     display: flex;
@@ -69,7 +69,7 @@ main h1 {
 
 main h2 {
     font-size: 2rem;
-    background-color: #C0EEF2;
+    background-color: #ffe600;
     padding: 10px;
 }
 
@@ -89,6 +89,78 @@ main h2 {
     color: #181823; 
     cursor: pointer; 
   }
+
+/* Main Destinos */
+
+.mainGaleria {
+    background: linear-gradient(to top, #ffffff 85%, #181823 100%);
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    grid-area: main;
+}
+
+.mainGaleria h3{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color:white;
+}
+
+#colorado {
+    background-image: url(../img/colorado.jpg);
+}
+
+#guiza {
+    background-image: url(../img/guiza.jpg);
+}
+
+#babilonia {
+    background-image: url(../img/babilonia.jpg);
+}
+
+#atenas {
+    background-image: url(../img/grecia.jpg);
+}
+
+#belen {
+    background-image: url(../img/belen.jpg);
+}
+
+#roma {
+    background-image: url(../img/coliseo.jpg);
+}
+
+#guanahani {
+    background-image: url(../img/guanahani.jpg);
+}
+
+
+#buenosaires {
+    background-image: url(../img/buenosaires.jpg);
+}
+
+#berlin {
+    background-image: url(../img/berlin.jpg);
+}
+
+#tokyo {
+    background-image: url(../img/japon.jpg);
+}
+
+#chernobil {
+    background-image: url(../img/nuevachernobyl.jpg);
+}
+
+#qatar {
+    background-image: url(../img/qatar.jpg);
+}
+
+#celestial {
+    background-image: url(../img/unioncelestial.jpg);
+}
+
 
 /* Aside con información */
 
@@ -134,9 +206,8 @@ section {
     grid-area: section;
   }
 
-.destino1 {
+.destino {
     transition: box-shadow 0.3s;
-    background-image: url(../img/babilonia.jpg);
     background-position: center center; 
     background-size: cover; 
     height: 300px;
@@ -149,11 +220,11 @@ section {
     border-radius: 15px;
 }
 
-.destino1:hover {
+.destino:hover {
     box-shadow: 10px 10px 11px -7px rgba(0,0,0,0.95);
 }
 
-.destino1 button {
+.destino button {
     border-radius: 20px; 
     background-color: #ffe600; 
     color: #000000;
@@ -166,18 +237,18 @@ section {
     cursor: pointer; 
 }
 
-.destino1 button:hover{
+.destino button:hover{
     background-color: #000 ;
     color: #ffe600; 
 }
 
+/* QATAR */
 .destino2 {
     transition: box-shadow 0.3s;
-    background-image: url(../img/unioncelestial.jpg);
     background-position: center center; 
     background-size: cover; 
     height: 300px;
-    width: 300px;
+    width: 300px; 
     display: flex; 
     justify-content: center; 
     align-items: flex-end; 
@@ -192,8 +263,8 @@ section {
 
 .destino2 button {
     border-radius: 20px; 
-    background-color: #ffe600; 
-    color: #000000;
+    background-color: #8A1535; 
+    color: #FFFFFF;
     border: none; 
     padding: 10px 20px; 
     font-size: 16px; 
@@ -204,9 +275,11 @@ section {
 }
 
 .destino2 button:hover{
-    background-color: #000 ;
-    color: #ffe600; 
+    background-color: #ffffff ;
+    color: #8a1538; 
 }
+
+
 
 
 /* Footer */
@@ -259,11 +332,18 @@ footer {
         padding: 0;
     }
 
-    /* cambio en el aside */
+    /* cambio en el section */
 
     section {
         width: 45vw;
         padding: 0;
+    }
+
+    /* GRID DE GALERIA */
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -314,7 +394,7 @@ footer {
         padding: 0;
     }
 
-    /* cambio en el aside */
+    /* cambio en el section */
 
     section {
         width: 50vw;
@@ -325,5 +405,12 @@ footer {
 
     .divDestinos {
         display: flex;
+    }
+
+    /* GRID GALERIA */
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
