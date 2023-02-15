@@ -267,3 +267,63 @@ footer {
     }
 
 }
+
+/* DESTKOP */
+
+@media (min-width: 1024px) {
+    .web {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "aside section section"
+        "footer footer footer";
+    }
+
+    /* cambio en la barra de navegación */
+
+    header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 0x;
+    }
+
+    .divMenu li {
+        padding-right: 20px;
+    }
+
+    /* cambio en el aside */
+
+    aside {
+        width: 25vw;
+        margin-left: 100px;
+    }
+
+    aside h3 {
+        padding: 20px;
+    }
+
+    .divInfo p {
+        font-size: 2rem;
+    }
+
+    #imgMujer {
+        width: 20vw;
+        padding: 0;
+    }
+
+    /* cambio en el aside */
+
+    section {
+        width: 50vw;
+        padding: 0;
+        display:flex;
+        justify-content: center;
+    }
+
+    .divDestinos {
+        display: flex;
+    }
+}
